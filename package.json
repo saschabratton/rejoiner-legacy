@@ -1,0 +1,24 @@
+{
+  "name": "rejoiner-api",
+  "version": "0.0.1",
+  "main": "lib/rejoiner.js",
+  "author": "Sascha Bratton <sascha@brattonbratton.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint lib --ext .js",
+    "test": "yarn lint",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "graceful-fs": "^4.1.11",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3"
+  }
+}
